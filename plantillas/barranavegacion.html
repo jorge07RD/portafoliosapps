@@ -1,0 +1,109 @@
+{% load static %}
+<html class="has-navbar-fixed-top">
+
+
+  <title>Hello Bulma</title>
+  <script> src='{% static "JS/arriba.js" %}' </script>
+  <body>
+    <nav
+      class="navbar is-link is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <figure class="image is-48x48">
+          <img src='{% static "IMG/portafolio.png" %}' alt="fondo" />
+        </figure>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-end"></div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          
+       
+        </div>
+
+        <div class="navbar-end">
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+             
+              <a class="navbar-item">
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span>about me</span>
+                </span>
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start" >
+
+                  <a class="navbar-item " > 
+                    
+                      <span class="icon-text">
+                        <span class="icon">
+                          <i class="fas fa-address-card"></i>
+                        </span>
+                        <span>Curriculum</span>
+                      </span>
+                    </a>
+                  </div>
+                  
+                </div>
+
+                <div class="navbar-end">
+                  <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                      <a class="navbar-item"> 
+                   
+                          <span class="icon-text">
+                            <span class="icon">
+                              <i class="fas fa-address-book"></i>
+                            </span>
+                            <span>contac</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="navbar-end">
+                    <div id="navbarBasicExample" class="navbar-menu">
+                      <div class="navbar-start">
+                    
+                          <a class="navbar-item">
+                            <span class="icon-text">
+                              <span class="icon">
+                                <i class="fas fa-laptop-code"></i>
+                              </span>
+                              <span>skills</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

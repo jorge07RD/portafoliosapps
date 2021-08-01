@@ -1,0 +1,113 @@
+{% load static %}
+<html>
+
+
+  <title>Hello Bulma</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  
+  <body class="has-navbar-fixed-top">
+    <p id="about-me" href="#top"></p>
+    <nav
+      class="navbar is-link is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+      
+    >
+      <div class="navbar-brand">
+        <figure class="image is-48x48">
+          <img src='{% static "IMG/portafolio.png" %}' alt="fondo" />
+        </figure>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="true"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-end"></div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          
+       
+        </div>
+
+        <div class="navbar-end">
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start" id="top"  >
+             
+              <a class="navbar-item"  href="#about-me" href="#top">
+                <span class="icon-text">
+                  <span class="icon">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span>about me</span>
+                </span>
+              </a>
+            </div>
+
+            <div class="navbar-end">
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start" id="top">
+
+                  <a class="navbar-item" href="#curriculum"  > 
+                    
+                      <span class="icon-text" >
+                        <span class="icon">
+                          <i class="fas fa-address-card"></i>
+                        </span>
+                        <span>Curriculum</span>
+                      </span>
+                    </a>
+                  </div>
+                  
+                </div>
+
+                <div class="navbar-end">
+                  <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start" id="top">
+                      <a class="navbar-item" href="#boton1_contac"> 
+                   
+                          <span class="icon-text">
+                            <span class="icon">
+                              <i class="fas fa-address-book"></i>
+                            </span>
+                            <span>contac</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="navbar-end">
+                    <div id="navbarBasicExample" class="navbar-menu">
+                      <div class="navbar-start" id="top">
+                    
+                          <a class="navbar-item" href="#boton1_skills">
+                            <span class="icon-text">
+                              <span class="icon">
+                                <i class="fas fa-laptop-code"></i>
+                              </span>
+                              <span>skills</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+  </body>
+</html>
