@@ -30,4 +30,5 @@ urllib3==1.26.6
 webcolors==1.11.1
 whitenoise==5.3.0
 wikipedia==1.4.0
+wxPython==4.1.1
 wxwidgets==1.0.5
