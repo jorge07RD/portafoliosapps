@@ -1,0 +1,41 @@
+#indexbox {
+  background-size: cover;
+  background-repeat: no-repeat; /*Evitas que la imagen se repita si el contenedor es mas grande*/
+  background-image: url("/static/IMG/layered.svg");
+  margin: 0px 0px 0px 0px;
+}
+
+
+#curriculimbox {
+  background-size: cover;
+  background-repeat: no-repeat; /*Evitas que la imagen se repita si el contenedor es mas grande*/
+  background-image: url("/static/IMG/fondo de curriculum.svg");
+  margin: 0px 0px 0px 0px;
+}
+
+#contactobox {
+  background-size: cover;
+  background-repeat: no-repeat; /*Evitas que la imagen se repita si el contenedor es mas grande*/
+  background-image: url("/static/IMG/fondodecontacto.svg");
+  margin: 0px 0px 0px 0px;
+}
+
+#skillsbox {
+  background-size: cover;
+  background-repeat: no-repeat; /*Evitas que la imagen se repita si el contenedor es mas grande*/
+  background-image: url("/static/IMG/fondoskills.svg");
+  margin: 0px 0px 0px 0px;
+}
+
+#PPP {
+  color: rgb(47, 136, 224);
+}
+
+.ir-arriba{
+  color: rgb(255, 4, 4);;
+}
+
+html, body {
+  /* Esta regla es suficiente */
+  scroll-behavior:smooth;
+}
