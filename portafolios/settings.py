@@ -38,9 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "portafolioapp",
     'bulma',
     "django_static_fontawesome",
-    "portafolioapp"
+    
 ]
 
 MIDDLEWARE = [

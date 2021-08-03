@@ -1,7 +1,7 @@
 #indexbox {
   background-size: cover;
   background-repeat: no-repeat; /*Evitas que la imagen se repita si el contenedor es mas grande*/
-  background-image: url("/static/IMG/layered-waves-haikei (1).svg");
+  background-image: url("/static/IMG/layered.svg");
   margin: 0px 0px 0px 0px;
 }
 
@@ -16,7 +16,7 @@
 #contactobox {
   background-size: cover;
   background-repeat: no-repeat; /*Evitas que la imagen se repita si el contenedor es mas grande*/
-  background-image: url("/static/IMG/fondodecontacto (2).svg");
+  background-image: url("/static/IMG/fondodecontacto.svg");
   margin: 0px 0px 0px 0px;
 }
 
