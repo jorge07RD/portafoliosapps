@@ -4,6 +4,7 @@ import os
 import mimetypes
 from django.core.mail import send_mail
 from django.conf import settings
+from django.contrib import messages
 
 
 # Create your views here.
@@ -25,7 +26,7 @@ def contacto(request):
         recipiente_list=["jorge.beriguete.mateo@gmail.com"]
 
         send_mail(Subject,email_message,email_from,recipiente_list)
-
+        messages.add_message(request, messages.INFO, 'mensaje enviado.')
      
         return render(request,"index.html")
     return render(request,'index.html')    

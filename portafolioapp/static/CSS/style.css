@@ -43,3 +43,24 @@ html, body {
 #imagenskill{
     padding-top: 20px;
 }
+
+#cardhover{
+ 
+  -webkit-transition: all 0.5s 0s ease;
+  -moz-transition: all 0.5s 0s ease;
+  -o-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+  
+  
+}
+
+#cardhover:hover{
+  
+  -moz-transform: scale(1.1) ;
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+-webkit-box-shadow: 2px 2px 20px 2px #96B3EB;
+box-shadow: 2px 2px 20px 2px #96B3EB;
+}
