@@ -64,7 +64,7 @@ def indexclima (request):
         elif clima == "Tormentas eléctricas" or clima == "Tormentas eléctricas dispersas" or clima == "Tormentas eléctricas dispersas / Viento" or clima == "Tormentas eléctricas aisladas":
             return render(request,'climaTormentas.html',{'climaRD':clima_temperatura})
     elif dia == False:
-        if clima == "Despejado" or clima == "Mayormente despejado":
+        if clima == "Despejado" or clima == "Mayormente despejado" or clima == "Soleado":
             return render(request,'despejadonocheclima.html',{'climaRD':clima_temperatura})
         elif clima == "Muy nublado":
             return render(request,'climamuynubladonoche.html',{'climaRD':clima_temperatura})
