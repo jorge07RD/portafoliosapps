@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "portafolioapp",
+    "clima",
     'bulma',
     "django_static_fontawesome",
     
@@ -63,6 +64,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['C:/Users/jorje/OneDrive/Documentos/python/proyecto django/portafolios/portafolioapp/templates'],
+        'DIRS': ['C:/Users/jorje/OneDrive/Documentos/python/proyecto django/portafolios/clima/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,6 +132,7 @@ STATIC_URL = '/static/'
 
 
 STATIC_ROOT = 'static'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

@@ -1,0 +1,28 @@
+{% load static %}
+<html>
+    <head>
+        <title>klk</title>
+        <LINK REL=StyleSheet HREF='{% static "css/styleChubascos.css" %}' TITLE="clima">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+    
+  
+    <body id="fondo">
+        <div class="rain front-row"></div>
+        <div class="rain back-row"></div>
+        <div class="toggles">
+    
+        </div>
+        <div class="container">
+            <div id="cloud-intro"></div>
+          </div>
+          <p id="tiempo">{{climaRD}}</p>
+        
+      
+        <div id="sun"></div>
+       
+        <script src='{% static "JS/JSChubascos.js" %}' ></script>
+        
+    </body>
+</html>
+

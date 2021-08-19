@@ -64,3 +64,8 @@ transform: scale(1.1);
 -webkit-box-shadow: 2px 2px 20px 2px #96B3EB;
 box-shadow: 2px 2px 20px 2px #96B3EB;
 }
+
+#letra_carta{
+
+  padding: 10px;
+}
