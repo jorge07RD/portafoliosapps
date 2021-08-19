@@ -61,8 +61,8 @@ html, body {
 -o-transform: scale(1.1);
 -ms-transform: scale(1.1);
 transform: scale(1.1);
--webkit-box-shadow: 2px 2px 20px 2px #96B3EB;
-box-shadow: 2px 2px 20px 2px #96B3EB;
+-webkit-box-shadow: 2px 2px 20px 2px #9fa8c7;
+box-shadow: 2px 2px 20px 2px #9fa8c7;
 }
 
 #letra_carta{

@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from datetime import datetime
-
+import pytz 
 
 # Create your views here.
 from bs4 import BeautifulSoup
@@ -15,6 +15,8 @@ soup = BeautifulSoup(page.content, 'html.parser')
 #<div data-testid="wxPhrase" class="CurrentConditions--phraseValue--17s79">Muy nublado</div>
 
 
+timeZ_Ny = pytz.timezone('America/Santo_Domingo') 
+now = datetime.now(timeZ_Ny)
 
 now = datetime.now()
 
@@ -47,6 +49,10 @@ print(clima)
 
 print(clima_temperatura)
 
+
+# def climamyNublado (request):
+
+#     return render(request,'climamyNublado.html',{'climaRD':clima_temperatura})
 
 #funcion que muestra un clima dependiendo del clima en santo domingo y tambien dependiendo de la hora del dia
 
