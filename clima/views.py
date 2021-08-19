@@ -18,7 +18,7 @@ soup = BeautifulSoup(page.content, 'html.parser')
 timeZ_Ny = pytz.timezone('America/Santo_Domingo') 
 now = datetime.now(timeZ_Ny)
 
-now = datetime.now()
+
 
 print (now.hour)
 
