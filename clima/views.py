@@ -67,7 +67,7 @@ def indexclima (request):
             return render(request,'climanublado.html',{'climaRD':clima_temperatura})
         elif clima == "Chubascos" or clima == "Chubasco" or clima == "Lluvia débil" or clima == "Chubascos en el área":
             return render(request,'climaChubascos.html',{'climaRD':clima_temperatura})
-        elif clima == "Tormentas eléctricas" or clima == "Tormentas eléctricas dispersas" or clima == "Tormentas eléctricas dispersas / Viento" or clima == "Tormentas eléctricas aisladas":
+        elif clima == "Tormentas eléctricas" or clima == "Tormentas eléctricas dispersas" or clima == "Tormentas eléctricas dispersas / Viento" or clima == "Tormentas eléctricas aisladas"  or clima == "Truenos" :
             return render(request,'climaTormentas.html',{'climaRD':clima_temperatura})
     elif dia == False:
         if clima == "Despejado" or clima == "Mayormente despejado" or clima == "Soleado":
@@ -78,5 +78,5 @@ def indexclima (request):
             return render(request,'climanubladonoche.html',{'climaRD':clima_temperatura})
         elif clima == "Chubascos" or clima == "Chubasco" or clima == "Lluvia débil" or clima == "Chubascos en el área":
             return render(request,'climaChubascos.html',{'climaRD':clima_temperatura})
-        elif clima == "Tormentas eléctricas" or clima == "Tormentas eléctricas dispersas" or clima == "Tormentas eléctricas dispersas / Viento" or clima == "Tormentas eléctricas aisladas":
+        elif clima == "Tormentas eléctricas" or clima == "Tormentas eléctricas dispersas" or clima == "Tormentas eléctricas dispersas / Viento" or clima == "Tormentas eléctricas aisladas"  or clima == "Truenos" :
             return render(request,'climaTormentas.html',{'climaRD':clima_temperatura})
