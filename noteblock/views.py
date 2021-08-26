@@ -25,7 +25,7 @@ def buscar(request):
         if note.is_valid():
             note.save()
             note = formularionotes
-        return render(request,'pruebas.html',{'notas':notas})
+        return render(request,'notes.html',{'notas':notas})
 
 
 def delete_event(request,noteblock_id):
@@ -34,4 +34,4 @@ def delete_event(request,noteblock_id):
 
     object = noteblock.objects.get(id=noteblock_id)
     object.delete()
-    return render(request,'pruebas.html',{'notas':notas})
+    return render(request,'notes.html',{'notas':notas})
