@@ -1,0 +1,129 @@
+{% load static %}
+
+
+
+
+<!DOCTYPE html>
+<html  >
+  <head>
+    <link rel="icon" type="image/png" href='{% static "IMG/portafolio.png" %}'/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>noteblock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <LINK REL=StyleSheet HREF='{% static "CSS/stylenote.css" %}' TITLE="Contemporaneo">
+    <link rel="stylesheet" type="text/css" href='{% static "fontawesome/css/all.min.css" %}' />
+      
+  
+
+
+     
+  
+  </head>
+  
+    <body >
+
+
+        <div class="columns">
+          <div class="column"></div>
+          
+        </div>
+        <div class="columns">
+          <div class="column is-one-fifth"></div>
+          <a href="https://portafoliosapps.herokuapp.com/index/"><button class="button is-light">portafolio</button></a>
+          
+        </div>
+
+        <div class="columns">
+          <div class="column"></div>
+          <div class="column is-one-third ">
+            <div class="box">
+              <form action="/buscar/" method="POST" > {% csrf_token %}
+                <div class="field">
+                  <label class="label">Subject</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Text input" name="Subject" required>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">note</label>
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Textarea" name="note"  maxlength="500" required></textarea>
+                  </div>
+                </div>
+                
+               
+             
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="color" value="dark" id="dark" checked>
+                    <span class="tag is-dark">black</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="color" value="success" id="success">
+                    <span class="tag is-success">gren</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="color" value="info" id="info">
+                    <span class="tag is-info">blue</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="color" value="warning" id="warning">
+                    <span class="tag is-warning">yellow</span>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="color" value="danger" id="danger">
+                    <span class="tag is-danger">red</span>
+                  </label>
+                </div>
+    
+                <div class="columns">
+                  <div class="column"></div>
+                  
+                </div>
+    
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">SAVE</button>
+                  </div>
+                </form>
+    
+            </div>
+          </div>
+          
+       
+        
+      </div>
+      <div class="column"></div>
+    </div>
+    
+
+        <div class="columns is-multiline">
+       
+          {% for notas in notas %}
+
+          <div class="column is-one-third">
+          <article class="message is-{{notas.color}}">
+            <div class="message-header">
+              <p> {{notas.Subject}}</p>
+              <a href="{% url 'delete_event' notas.id %}" > <button class="delete" aria-label="delete"></button></a>
+            </div>
+            <div class="message-body">
+              {{notas.note}}
+            </div>
+          </article>
+        </div>
+          {% endfor %}
+        
+        </div>
+
+        
+        
+      
+        
+    
+
+     
+  </body>
+</html>

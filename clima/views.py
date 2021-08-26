@@ -50,9 +50,9 @@ print(clima)
 print(clima_temperatura)
 
 
-# def climamyNublado (request):
 
-#     return render(request,'climamyNublado.html',{'climaRD':clima_temperatura})
+
+
 
 #funcion que muestra un clima dependiendo del clima en santo domingo y tambien dependiendo de la hora del dia
 
