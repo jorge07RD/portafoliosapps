@@ -85,6 +85,18 @@ WSGI_APPLICATION = 'portafolios.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#       'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'dbnote',
+#         'USER': 'postgres',
+#         'PASSWORD': '070797Jb',
+#         'HOST': '127.0.0.1',
+#         'DATABASE_PORT': '5432',
+#     }
+# }
+
+
 DATABASES = {
       'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -95,6 +107,7 @@ DATABASES = {
         'DATABASE_PORT': '5432',
     }
 }
+
 
 
 
