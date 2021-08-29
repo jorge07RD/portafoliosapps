@@ -1,5 +1,6 @@
-
+from django.urls import reverse
 from django.http.request import HttpRequest
+from django.http.response import HttpResponseRedirect
 from django.shortcuts import render,redirect
 from noteblock.froms import formularionotes
 from noteblock.models import noteblock
@@ -14,20 +15,28 @@ color = "danger"
 
 def notes (request):
 
-    color = formularionotes()
-
     notas = noteblock.objects.all()
 
     return render(request,'notes.html',{'notas':notas})
 
-def buscar(request):
+def save_note(request):
         notas = noteblock.objects.all()
 
         note = formularionotes(request.POST)
         if note.is_valid():
             note.save()
-            note = formularionotes
-        return render(request,'notes.html',{'notas':notas})
+            return HttpResponseRedirect('notes',{'notas':notas})
+
+def save_note_guarda (request):
+
+    notas = noteblock.objects.all()
+
+    return render(request,'notes.html',{'notas':notas})
+
+
+
+
+           
 
 
 

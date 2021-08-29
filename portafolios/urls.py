@@ -18,7 +18,7 @@ from django.urls import path
 from portafolios.views import primera_p
 from portafolioapp import views
 from clima.views import indexclima
-from noteblock.views import notes,buscar,delete_event
+from noteblock.views import notes,save_note,delete_event,save_note_guarda
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,7 +27,9 @@ urlpatterns = [
     path('index/', views.index),
     path('contacto/', views.contacto),
     path('notes/', notes),
-    path('buscar/',buscar),
+    path('save_note/',save_note),
+    path('save_note/guarda/',save_note_guarda),
+
     path('delete_event/<int:noteblock_id>',delete_event, name='delete_event'),
     path('indexclima/',indexclima),
  
