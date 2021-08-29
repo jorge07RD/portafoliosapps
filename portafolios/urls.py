@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from portafolios.views import primera_p
-from portafolioapp import views
+from portafolioapp.views import contacto, index,enviar
 from clima.views import indexclima
 from noteblock.views import notes,save_note,delete_event,save_note_guarda
 from django.conf import settings
@@ -24,8 +24,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index),
-    path('contacto/', views.contacto),
+    path('index/', index),
+    path('contacto/', contacto),
+    path('contacto/enviar/', enviar),
     path('notes/', notes),
     path('save_note/',save_note),
     path('save_note/guarda/',save_note_guarda),
