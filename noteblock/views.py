@@ -25,7 +25,7 @@ def save_note(request):
         note = formularionotes(request.POST)
         if note.is_valid():
             note.save()
-            return HttpResponseRedirect('notes',{'notas':notas})
+            return HttpResponseRedirect('guarda',{'notas':notas})
 
 def save_note_guarda (request):
 
