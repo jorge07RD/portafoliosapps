@@ -35,6 +35,8 @@ urlpatterns = [
     path('indexclima/',indexclima),
  
     
+ 
+    
 
 
 ] +static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
