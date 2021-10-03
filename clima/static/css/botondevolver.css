@@ -27,14 +27,17 @@ backdrop-filter: blur( 12.5px );
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-@media screen and (max-width: 480px){
+@media (max-width:450px){
     #boton-portafolio > p{
-      
-        width: 200px;
-        border-radius: 22px;
-        padding:       40px 90px;
+       
+     
+       
+        padding:40px 90px;
         left: 30%;
         font-size: 40px;
+        top:350px;
+    
+        
 
       
     }

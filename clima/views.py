@@ -60,7 +60,7 @@ def indexclima (request):
             return render(request,'climasoleado.html',{'climaRD':clima_temperatura})
         elif clima == "Muy nublado":
             return render(request,'climamyNublado.html',{'climaRD':clima_temperatura})
-        elif clima == "nublado" or clima == "Parcialmente nublado":
+        elif clima == "Nublado" or clima == "Parcialmente nublado":
             return render(request,'climanublado.html',{'climaRD':clima_temperatura})
         elif clima == "Chubascos" or clima == "Chubasco" or clima == "Lluvia débil" or clima == "Chubascos en el área":
             return render(request,'climaChubascos.html',{'climaRD':clima_temperatura})
