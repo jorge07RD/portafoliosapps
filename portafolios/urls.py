@@ -30,7 +30,6 @@ urlpatterns = [
     path('notes/', notes),
     path('save_note/',save_note),
     path('save_note/guarda/',save_note_guarda),
-
     path('delete_event/<int:noteblock_id>',delete_event, name='delete_event'),
     path('indexclima/',indexclima),
  
