@@ -35,11 +35,6 @@ def save_note_guarda (request):
 
 
 
-
-           
-
-
-
 def delete_event(request,noteblock_id):
     notas = noteblock.objects.all()
 
