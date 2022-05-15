@@ -23,14 +23,17 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    # app portafolios
     path('admin/', admin.site.urls),
     path('index/', index),
     path('contacto/', contacto),
     path('contacto/enviar/', enviar),
+    # app notes
     path('notes/', notes),
     path('save_note/',save_note),
     path('save_note/guarda/',save_note_guarda),
     path('delete_event/<int:noteblock_id>',delete_event, name='delete_event'),
+    # app notes clima
     path('indexclima/',indexclima),
  
     

@@ -35,15 +35,18 @@ else:
 
 
 
-clima_temperatura = soup.find_all('div', class_='CurrentConditions--primary--2SVPh')
-equipo = list()
-for i in clima_temperatura:
-    equipo.append(i.text)
+clima_temperatura = soup.find_all('span', class_='CurrentConditions--tempValue--3a50n')
+clima = soup.find_all('div', class_='CurrentConditions--phraseValue--2Z18W')
 
-clima_temperatura = equipo[0]
-clima = clima_temperatura[3:]
+def primer_elemento(clima_temperatura):
+    equipo = list()
+    for i in clima_temperatura:
+        equipo.append(i.text)
+    clima_temperatura = equipo[0]
+    return clima_temperatura
 
-
+clima_temperatura = primer_elemento(clima_temperatura)
+clima = primer_elemento(clima)
 print(clima)
 
 
